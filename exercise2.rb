@@ -3,15 +3,13 @@ puts "Enter random number here"
 user_input = gets.chomp.to_i
 
 def negative?(number)
-  if number > 0
-    puts "This is a postive number"
-  elsif number < 0
-    puts "This is a negative number"
-  else
-    puts "You entered ZERO. Its neither positive or negative"
-  end
+  number < 0
 end
 
-results = negative?(user_input)
-
-puts results
+if user_input ==0
+  puts "You entered ZERO. Its neither positive or negative"
+elsif negative?(user_input)
+  puts "This is a  neg number"
+else
+  puts "positive"
+end
