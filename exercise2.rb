@@ -6,10 +6,10 @@ def negative?(number)
   number < 0
 end
 
-if user_input ==0
+if user_input == 0
   puts "You entered ZERO. Its neither positive or negative"
 elsif negative?(user_input)
-  puts "This is a  neg number"
+  puts "This is a negative number"
 else
-  puts "positive"
+  puts "This is a positive number"
 end

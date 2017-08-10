@@ -3,17 +3,13 @@ puts "Enter random number here"
 user_input = gets.chomp.to_i
 
 def is_even?(number)
-
-  if number == 0
-    puts "You entered ZERO. Its neither odd nor even"
-  elsif number % 2 == 0
-    puts "This is an even number"
-  else
-    puts "This is an odd number"
-  end
-
+  number % 2 == 1
 end
 
-results = is_even?(user_input)
-
-puts results
+  if user_input == 0
+    puts "You entered ZERO. Its neither odd nor even"
+  elsif is_even?(user_input)
+    puts "This is an odd number"
+  else
+    puts "This is an even number"
+  end
