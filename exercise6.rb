@@ -1,6 +1,6 @@
 puts "What is the current temerature in Fahrenheit?"
 
-user_input = gets.chomp.to_i
+user_input = gets.chomp.to_f
 
 def temp_conversion(fahrenheit)
   ((fahrenheit - 32) * (5.0/9))
